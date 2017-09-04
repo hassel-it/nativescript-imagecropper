@@ -55,7 +55,8 @@ class TOCropViewControllerDelegateImpl extends NSObject {
         var imgSrc = new imageSource.ImageSource();
         if(_options && _options.width && _options.height){
           //Resize Image
-          var rect:CGRect = CGRectMake(0,0,_options.width,_options.height);
+          var rect:CGRect = CGRectMake(0, 0, image.size.width, image.size.height);
+          //var rect:CGRect = CGRectMake(0,0,_options.width,_options.height);
           UIGraphicsBeginImageContext(rect.size);
           image.drawInRect(rect);
           var resizedImage = UIGraphicsGetImageFromCurrentImageContext();
