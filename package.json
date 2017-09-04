@@ -1,25 +1,41 @@
 {
-  "name": "nativescript-imagecropper",
-  "version": "0.0.7",
+  "_from": "nativescript-imagecropper",
+  "_id": "nativescript-imagecropper@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-kOdtBFd/Dae+P6+OWcnYKADmS00=",
+  "_location": "/nativescript-imagecropper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-imagecropper",
+    "name": "nativescript-imagecropper",
+    "escapedName": "nativescript-imagecropper",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-imagecropper/-/nativescript-imagecropper-0.0.7.tgz",
+  "_shasum": "90e76d04577f0da7be3faf8e59c9d82800e64b4d",
+  "_spec": "nativescript-imagecropper",
+  "_where": "/Users/thomas/Desktop/Local Repos/slyde",
+  "author": {
+    "name": "bthurlow"
+  },
+  "bugs": {
+    "url": "https://github.com/bthurlow/nativescript-imagecropper/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A image cropper based on TOCropViewController for iOS and uCrop for Android",
-  "main": "imagecropper.js",
-  "nativescript": {
-    "platforms": {
-      "android": "1.4.0",
-      "ios": "1.4.0"
-    }
+  "devDependencies": {
+    "typescript": "^1.8.7"
   },
-  "scripts": {
-    "build": "tsc",
-    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-imagecropper && tns plugin add .. && tns install",
-    "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
-    "demo.ios": "npm run preparedemo; cd demo; tns deploy ios --emulator --justlaunch",
-    "demo.android": "npm run preparedemo && cd demo && tns run android"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bthurlow/nativescript-imagecropper"
-  },
+  "homepage": "https://github.com/bthurlow/nativescript-imagecropper",
   "keywords": [
     "NativeScript",
     "image",
@@ -29,14 +45,25 @@
     "TOCropViewController",
     "uCrop"
   ],
-  "author": "bthurlow",
-  "bugs": {
-    "url": "https://github.com/bthurlow/nativescript-imagecropper/issues"
-  },
   "license": "MIT",
-  "homepage": "https://github.com/bthurlow/nativescript-imagecropper",
-  "readmeFilename": "README.md",
-  "devDependencies": {
-    "typescript": "^1.8.7"
-  }
+  "main": "imagecropper.js",
+  "name": "nativescript-imagecropper",
+  "nativescript": {
+    "platforms": {
+      "android": "1.4.0",
+      "ios": "1.4.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bthurlow/nativescript-imagecropper.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo; cd demo; tns deploy ios --emulator --justlaunch",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-imagecropper && tns plugin add .. && tns install",
+    "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "version": "0.0.7"
 }
