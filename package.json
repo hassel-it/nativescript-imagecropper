@@ -46,7 +46,7 @@
     "uCrop"
   ],
   "license": "MIT",
-  "main": "imagecropper.js",
+  "main": "imagecropper",
   "name": "nativescript-imagecropper",
   "nativescript": {
     "platforms": {
