@@ -1,4 +1,3 @@
-"use strict";
 var application = require('application');
 var imageSource = require('image-source');
 var fs = require('file-system');
